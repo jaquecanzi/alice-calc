@@ -19,7 +19,7 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5,100px);
 }
 
-.calculator-grid > button {
+.calculator-grid > .numbers, #clear {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
@@ -28,7 +28,7 @@ body {
    
 }
 
-.calculator-grid > button:hover {
+.calculator-grid > .numbers:hover, #clear:hover {
     background-color: rgba(255, 255, 255, 0.9) ;
 }
 
@@ -58,4 +58,25 @@ body {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     text-shadow: 2px 3px rgba(0, 0, 0,0.75);
+}
+
+.calculator-grid .data-operation, #equal, #delete  {
+    background-color: #ff1493;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+}
+
+.calculator-grid .data-operation:hover, #equal:hover, #delete:hover {
+    background-color: #ff1493cc;
+}
+
+.calculator-grid #clear {
+    background-color: #0000ff;
+    
+}
+
+.calculator-grid #clear:hover {
+    background-color: darkblue;
 }
